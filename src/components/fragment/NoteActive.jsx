@@ -35,11 +35,11 @@ function NoteActive({ notes, setNotes, search, ...props }) {
   return (
     <>
       <h1 className="w-auto py-5 text-2xl text-left text-white">Note Active</h1>
-      <div className="max-w-6xl mb-10">
+      <div className="max-w-6xl mb-10 sm:w-auto">
         {allArchived ? (
           <p className="text-left">Tidak ada catatan</p>
         ) : (
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-4 gap-5 max-[640px]:grid-cols-2">
             {notes
               .filter((note) => {
                 return search.toLowerCase() === "" ? note : note.title.toLowerCase().includes(search);

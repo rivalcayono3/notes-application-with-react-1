@@ -1,5 +1,3 @@
-import Button from "../element/Button";
-
 function Card({ judul, time, content, onClick, children, ...props }) {
   return (
     <div className="flex flex-col justify-between p-3 overflow-hidden text-white border border-white rounded-lg">

@@ -38,7 +38,7 @@ function NoteArchived({ notes, setNotes, search, ...props }) {
         {allArchived ? (
           <p className="text-left">Tidak ada catatan</p>
         ) : (
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-4 gap-5 max-[640px]:grid-cols-2">
             {notes
               .filter((note) => {
                 return search.toLowerCase() === "" ? note : note.title.toLowerCase().includes(search);
